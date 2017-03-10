@@ -1,6 +1,6 @@
 	console.log('boo hoo!');
 	var storyLog ="";
-	var lastChoice=null;
+	var lastChoice=-1;
 
 	document.addEventListener('DOMContentLoaded', function () {
 
@@ -21,18 +21,15 @@
 		}
 		var choiceArray = allText.split(theSep);
 		var numOfChoices = (choiceArray.length);
+
 	    var x=Math.floor(Math.random()*numOfChoices);
+		console.log('last choice = ' + lastChoice);
+	    console.log('x = ' + x);
 	    //trying to make less repetition in choice
-	    if (x==lastChoice){
-	    	// console.log('lastChoice is same as x');
-	    	var plusOrMinus=Math.round(Math.random()) * 2 - 1;
-	    	var z=x+plusOrMinus;
-	    	if (z>=0 | z<=numOfChoices){
-	    		x=z;
-	    		lastChoice=x;
-	    	}
-	    	console.log(lastChoice);
+	    while (x==lastChoice){
+	    x=Math.floor(Math.random()*numOfChoices);	
 	    }
+	    lastChoice=x;
 	    storyLog = storyLog + " " + choiceArray[x];
 		document.getElementById("newText").value = storyLog;
 	});
