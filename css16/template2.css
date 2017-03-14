@@ -1,0 +1,117 @@
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+	color: black!important;
+	text-transform: capitalize!important;
+	font-family: 'Habibi', serif;
+
+}
+.navbar-default{
+	background-color: white!important;
+  /*background-color: transparent!important;*/
+	border-color:transparent!important;
+}
+.navbar-toggle {
+    z-index:3;
+}
+.navbar-header{
+  background-color: white;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Habibi', serif;	
+	color:#999;
+
+}
+h1 {
+	font-size: 4em;
+	padding-bottom: 10px;
+}
+
+h2, h3 {
+  text-align: left;
+}
+
+
+.emphasis{
+color: black;
+}
+
+p, li, form {
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  text-align: left;
+  font-size: 1.2em;
+  line-height: 1.8;
+  font-family: 'Habibi', serif;
+  color: gray;
+}
+.subHeader{
+  font-family: sans-serif;
+  font-size: 1em; 
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ccc;
+  padding-bottom: 20px;
+  font-weight: 300;
+}
+
+h2, h3 {
+  font-family: 'Habibi', serif;
+  /*text-transform: uppercase;*/
+  color: black;
+  font-size: 2em;
+  padding-bottom: 20px;
+
+}
+
+#bigButton{
+text-align: center;
+}
+
+btn {
+
+  margin: 20px 0 20px 0;
+  
+}
+
+a {
+    color: #555;
+    font-size: 1em;
+}
+
+a:hover {
+    color: #ccc;
+    /*font-family: 'Habibi', serif;
+
+    text-decoration: underline;*/
+}
+
+/*.container{
+  height:auto;
+overflow:visible;
+}*/
+
+li{
+  color:#333;
+}
+

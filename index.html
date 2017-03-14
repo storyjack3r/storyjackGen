@@ -1,48 +1,112 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<script type="text/javascript" src="rand-gen.js" ></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Generate your own texts</title>
+    <link rel="icon" type="image/png" href="images16/favicon.png"/>
+    <script type="text/javascript" src="rand-gen.js" ></script>
+    
+    <!-- glyphs -->
+    <link rel="stylesheet" href="font-awesome16/css/font-awesome.min.css">
+    <!-- Serif fonts to explore -->
+    <link href="https://fonts.googleapis.com/css?family=Andada|Habibi" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="css16/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css16/scrolling-nav.css" rel="stylesheet">
+    <link href="css16/template2.css" rel="stylesheet">
+    <link href="css16/formElements.css" rel="stylesheet">
+    
 </head>
 
-<body>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+          
+                <a class="navbar-brand" href="#page-top">Storyjacker</span></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li>
+                        <a class="page-scroll hidden" href="#page-top">Hello</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#storyjacker">Storyjacker games</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Borrow It</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#dipin">DipIn app</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="http://twitter.com/storyjacker"><i style="font-size:1.5em" class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+               
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-offset-3 col-lg-6">
+                    <h1>Making random<span class="emphasis"> happen </span></h1>
+                    <span class="subHeader">random text gen</span>
+                    
 
 
 <form>
-<h2 id="wordCount">Random story generator tool</h2>
+<!-- <h2 id="wordCount">Random story generator tool</h2> -->
 
 
 
 
-<p><textarea id="newText" rows="2" cols="36" style="padding:6px;font-size:24px;"></textarea></p>
-<button  type="button" style="color:#E53935;" onclick="sentenceBuilder()">Lazy sentence maker</button><button  type="button" style="color:#E53935;" onclick="storyResetter()">Start story again</button></p>
+<p id="newText"></p>
+<button  type="button" onclick="sentenceBuilder()">Lazy sentence maker</button><button  type="button" onclick="storyResetter()">Start story again</button><button  type="button" onclick="formFiller()">Get pre-inspired</button></p>
 
-<p>Your items are:<select id="sep" name="sep"><option value="lines">on separate lines.</option><option value="commas">separated by commas.</option><option value="semi-colons">separated by semi-colons.</option><option value="space">separated by a blank space.</option></select></p>
+<p>Your items are:<select id="sep" name="sep"><option value="commas">separated by commas.</option><option value="lines">on separate lines.</option><option value="semi-colons">separated by semi-colons.</option><option value="space">separated by a blank space.</option></select></p>
 <p><textarea class="oldText" name="oldText" rows="9" cols="36"></textarea></p>
 <p>
-	<button  type="button" style="color:#E53935;" onclick="randomiser(0)">Subject</button>
+	<button  type="button"  onclick="randomiser(0)">Beginning</button>
 	<p><textarea id="oldText" class="oldText" name="oldText" rows="9" cols="36"></textarea></p>
 <p>
-	<button  type="button" style="color:#E53935;" onclick="randomiser(1)">Verb</button>
+	<button  type="button"  onclick="randomiser(1)">Middle</button>
 	<p><textarea id="oldText" class="oldText" name="oldText" rows="9" cols="36"></textarea></p>
 <p>
-	<button  type="button" style="color:#E53935;" onclick="randomiser(2)">Object</button>
-	<p><textarea id="oldText" class="oldText" name="oldText" rows="9" cols="36"></textarea></p>
-<p>
-	<button  type="button" style="color:#E53935;" onclick="randomiser(3)">Adjective</button>
-<p>
-	
-	<p><textarea  class="oldText" name="oldText" rows="9" cols="36"></textarea></p>
-	<p>
-	<button id='ed1' type="button" style="color:#E53935;" onclick="randomiser(4)">Adverb</button>
-<p>
-	
-	<p><textarea  class="oldText" name="oldText" rows="9" cols="36"></textarea></p>
-	<p>
-	<button  type="button" style="color:#E53935;" onclick="randomiser(5)">Pronoun</button>
+	<button  type="button"  onclick="randomiser(2)">End</button>
 	
 
 	<!-- <input type="button" id="noun-submit" class="word-submit" name="random-choice" value="Random Noun" class="subbtn"> -->
 
-	<button  type="button" style="color:#E53935;" onclick="resetter()">reset</button></p>
+	<button  type="button" onclick="resetter()">reset</button></p>
 
 
 

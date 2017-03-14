@@ -1,0 +1,29 @@
+button {
+
+background-color: black;
+color: white;
+font-family: sans-serif;
+text-transform: uppercase;
+font-size: .7em;
+border: 0;
+padding:10px 20px 10px 20px;
+color: eee;
+letter-spacing:.1em;
+
+}
+
+button:hover {
+background-color: 3e3e3e;
+}
+
+
+select {
+
+	font-family: sans-serif;
+text-transform: uppercase;
+font-size: .7em;
+}
+
+myComposition{
+	border: thin solid #ccc;
+}
