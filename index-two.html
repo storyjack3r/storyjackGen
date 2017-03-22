@@ -43,7 +43,7 @@
                     <span class="icon-bar"></span>
                 </button>
           
-                <a class="navbar-brand" href="http://storyjacker.net">Storyjacker</span></a>
+                <a class="navbar-brand" href="#page-top">Storyjacker</span></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,7 +54,7 @@
                         <a class="page-scroll hidden" href="#page-top">Hello</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://storyjacker.net/index.html#storyjacker">Storyjacker games</a>
+                        <a class="page-scroll" href="#storyjacker">Storyjacker games</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#projects">Borrow It</a>
@@ -65,8 +65,6 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a class="page-scroll" href="http://twitter.com/storyjacker"><i style="font-size:1.5em" class="fa fa-twitter" aria-hidden="true"></i></a>
-                    </li>
-                    <li><a class="page-scroll" href="https://github.com/storyjack3r"><i style="font-size:1.5em" class="fa fa-github" aria-hidden="true"></i></a>
                     </li>
                
                 </ul>
@@ -80,11 +78,11 @@
     <section id="intro" class="section">
         <div class="container">
             <div class="row">
-                <div class="col-md-offset-3 col-md-6">
+                <div class="col-lg-offset-3 col-lg-6">
                     <h1>Make random<span class="emphasis"> texts </span></h1>
                     <span class="subHeader">Creative writing multipied by random</span>
                     <span id="hide-me"><h2>How to use this generator</h2>
-                    <p>Take three similar statements like 'I like bacon', 'You hate monkeys', 'They love me' and break them up into beginning, middle and end text boxes below split by commas, (e.g. beginning box would be 'I, you, they'). Once you've filled out the boxes, click 'Make random text' to see what you get.</p><p>Tip: Start simple with combinations that work. Then build.</p></span>
+                    <p>Take three similar sentences like 'I like bacon', 'You hate monkeys', 'They love me' and break them up into beginning, middle and end text boxes below (e.g. beginning box would be 'I, you, they'). Once you've filled out the boxes, click 'Make random text' to see what you get.</p><p>Tip: Start simple with combinations that work. Then build.</p></span>
 <form id="theBigForm">
 <h3>1. add words to the beginning</h3>
 <p>I still don't get it... <a href="#" style="text-decoration: underline;" onclick="formFiller()">Show me an example</a></p>
@@ -104,13 +102,13 @@
 
 	<!-- <input type="button" id="noun-submit" class="word-submit" name="random-choice" value="Random Noun" class="subbtn"> -->
 
-	<p style="text-align: center;"><button  type="button" class="cheeky" onclick="formFiller()">More examples</button><button class="subdued"  type="button" onclick="confirmDelete()">Clear generator</button><button class="subdued"  type="button" onclick="savePageData()">Save</button></p>
+	<p style="text-align: center;"><button  type="button" class="cheeky" onclick="formFiller()">More examples</button><button class="subdued"  type="button" onclick="resetter()">Clear generator</button><button class="subdued"  type="button" onclick="savePageData()">Save</button></p>
 </form>
 
 
 
 
-<h3 id="h-three">4. Now press the buttons to make random texts</h3>
+<h3 id="h-three">4. Press the buttons to make random texts</h3>
 <p id='warning' style="color:red;"><p>
 <form>
 <p style="text-align: center;"><button  type="button" onclick="sentenceBuilder()">Make a random text</button><button  type="button" onclick="storyResetter()">Clear</button></p> <!-- <p><button  type="button" onclick="addFreeText()">Add free text</button></p> -->
