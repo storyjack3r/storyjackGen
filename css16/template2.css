@@ -10,8 +10,16 @@
 	font-family: 'Habibi', serif;
 
 }
+
+#samplesList {
+  font-size: .9em;
+}
+.flipStyle{
+  background-color: black!important;
+  color: white!important;
+}
 .navbar-default{
-	background-color: white!important;
+	background-color: black;
   /*background-color: transparent!important;*/
 	border-color:transparent!important;
 }
@@ -19,17 +27,23 @@
     z-index:3;
 }
 .navbar-header{
-  background-color: white;
+  /*background-color: white;*/
+}
+
+body{
+  background-color: black;
+  color: white;
 }
 
 h1, h2, h3, h4 {
-	font-family: 'Habibi', serif;	
-	color:#999;
+	font-family: Helvetica, Arial, sans-serif;	
+	color:#222;
 
 }
 h1 {
 	font-size: 4em;
 	padding-bottom: 10px;
+
 }
 
 h2, h3 {
@@ -61,7 +75,7 @@ p, li, form {
   text-align: left;
   font-size: 1.2em;
   line-height: 1.8;
-  font-family: 'Habibi', serif;
+  /*font-family: 'Habibi', serif;*/
   color: gray;
 }
 .subHeader{
@@ -76,9 +90,7 @@ p, li, form {
 }
 
 h2, h3 {
-  font-family: 'Habibi', serif;
-  /*text-transform: uppercase;*/
-  color: black;
+
   font-size: 2em;
   padding-bottom: 20px;
 
@@ -93,8 +105,7 @@ btn {
   margin: 20px 0 20px 0;
   
 }
-
-
+background: black;
 a {
     color: #555;
     font-size: 1em;
@@ -115,4 +126,48 @@ overflow:visible;
 li{
   color:#333;
 }
+
+
+
+body {
+    width: 100%;
+    color: white;
+    background: black;
+
+    /*height: 100%;*/
+}
+
+html {
+    width: 100%;
+    /*height: 100%;*/
+}
+
+@media(min-width:767px) {
+    .navbar {
+      /*  padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;*/
+        background: black;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+     background: black;   
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+
+.section {
+    
+    padding-top: 150px;
+    padding-bottom: 30px;
+    text-align: center;
+
+
+
 

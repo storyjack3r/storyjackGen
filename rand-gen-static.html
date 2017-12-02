@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Made using random generator by David Jackson -->
+    <title>Generate your own texts</title>
+    <link rel="icon" type="image/png" href="images16/favicon.png"/>
+    <script type="text/javascript">
+    var storyLog="";
+    var lastChoice=-1;
+    var storedText = ['I, you, they, we', 'know, love, despise, hate, do not care about, know','me, you, her, him, them',];
+    function randomiser(listNumber){
+
+        var allText = storedText[listNumber];
+        
+        var theSep = ',';
+
+        var choiceArray = allText.split(theSep);
+        var numOfChoices = (choiceArray.length);
+
+        var x=Math.floor(Math.random()*numOfChoices);
+    
+        //trying to make less repetition in choice
+            if (numOfChoices!=1){
+                // Theres more than one choice
+        while (x==lastChoice[listNumber]){
+        
+        x=Math.floor(Math.random()*numOfChoices);   
+
+        }
+        }
+        lastChoice[listNumber]=x;
+        storyLog = storyLog + " " + choiceArray[x];
+        document.getElementById("newText").innerHTML= storyLog;
+    
+}
+function storyResetter(){
+        storyLog= "";
+        document.getElementById("newText").innerHTML= "";
+    
+}
+
+
+function sentenceBuilder(){
+    
+    var thisSentence = randomiser(0) + " " + randomiser(1) + " "+ randomiser(2);
+    storyLog = storyLog + "</br>";
+
+}
+
+    </script>
+    
+</head>
+
+
+
+<body>
+
+                    <h1>Chosen  title goes here</h1>
+                    
+                    
+
+
+<form>
+<p style="text-align: center;"><button  type="button" onclick="sentenceBuilder()">New random text</button><button  type="button" onclick="storyResetter()">Clear text</button></p> <!-- <p><button  type="button" onclick="addFreeText()">Add free text</button></p> -->
+<p id="newText"></p>
+<p>By you in collaboration with David Jackson</p>
+
+
+
+
+
+</form>
+
+
+</body>
+</html>

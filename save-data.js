@@ -38,11 +38,12 @@ return;
 
 function confirmDelete(){
     if(confirm("Do you want to delete the words you've saved?") == true){
-    resetter();
+    localStorage.clear();
     }
     else{
         return;
     }
 }
+
 
 
